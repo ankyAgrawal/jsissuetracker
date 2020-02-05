@@ -4,7 +4,7 @@ function saveIssue(e) {
   var issueDesc = document.getElementById('issueDescInput').value;
   var issueSeverity = document.getElementById('issueSeverityInput').value;
   var issueAssignedTo = document.getElementById('issueAssignedToInput').value;
-  var issueId = chance.guid();
+  var issueId = Math.random()
   var issueStatus = 'Open';
 
   var issue = {
